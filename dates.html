@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="dates.css">       
+    <link rel="stylesheet" href="reset.css">    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+</head>
+<body>
+    <div class="container">
+
+
+        <aside class="aside">
+            <div class="top">
+                <h2>My Manager</h2>
+                <span class="material-symbols-outlined">
+                    manage_accounts
+                </span>
+            </div>  
+        
+    <div class="sidebar">
+        <a href="index.html" class="home-link">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <h2>Home</h2>
+        </a>
+        <a href="todo.html">
+            <span class="material-symbols-outlined">
+                list_alt
+            </span>
+            <h2>Todo</h2>
+        </a>
+        <a href="expense.html">
+            <span class="material-symbols-outlined">
+                Currency_Rupee_Circle
+            </span>
+            <h2>Expense Tracker</h2>
+        </a>
+        <a href="dsa.html" class="expense-link">
+            <span class="material-symbols-outlined">
+                Fact_check
+            </span>
+            <h2>DSA List</h2>
+        </a>
+        <a href="dates.html" class="dates-link">
+            <span class="material-symbols-outlined">
+                Calendar_Month
+            </span>
+            <h2>Dates</h2>
+        </a>
+        </aside>
+
+
+        <main class="main-box">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prev-month">&lt;</button>
+                    <div id="month-year"></div>
+                    <button id="next-month">&gt;</button>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+            </div>
+        
+            <!-- Modal for adding events -->
+            <div id="event-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Add Event</h2>
+                    <label for="event-title">Event Title:</label>
+                    <input type="text" id="event-title">
+                    <label for="event-color">Event Color:</label>
+                    <select id="event-color">
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="purple">Purple</option>
+                    </select>
+                    <input type="hidden" id="event-index">
+                    <button id="save-event">Save</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dates.js"></script>
+</body>
+</html>

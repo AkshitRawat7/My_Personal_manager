@@ -1,0 +1,104 @@
+
+body{
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* To prevent the scrollbar */
+    font-size: 12px;
+    background-color: rgb(244, 221, 255);
+   }
+
+.container {
+    display: flex;
+    width: 98%;
+    height: 100%;
+    gap: 2rem;
+    margin: 0;
+   }
+   
+.aside 
+   {
+        margin-left: 1rem ;
+        display: flex ;
+        flex-direction: column ;
+        gap: 1rem;
+        height: 100%;
+   }
+   
+.top {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: white;
+   }
+   
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    height: calc(100% - 5rem); /* Adjust the height calculation */
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   }
+   
+aside .sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: grey;
+    margin-left: 1rem;
+    transition: all .1s ease-in;
+   }
+   
+aside .sidebar a:hover {
+    margin-left: 1rem;
+    color: darkorchid;
+    transition: 1s;
+   }
+   
+aside .sidebar a:hover span {
+    margin-left: 1rem;
+    color: darkorchid;
+    transition: 1s;
+   }
+   
+.main-box {
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: white;
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto; /* To allow scrolling within main-box if content overflows */
+   }
+
+a:hover
+{
+   border-left: 10px solid rgb(218, 140, 251);
+   background-color: rgb(246, 239, 250);
+}
+
+aside .sidebar a.active {
+    border-left: 10px solid rgb(218, 140, 251);
+    background-color: rgb(246, 239, 250);
+   }
+   
+
+
+       

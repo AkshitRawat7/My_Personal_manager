@@ -1,0 +1,260 @@
+.income-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15px;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.balance {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid white;
+    height: 100px;
+    width: 150%;
+    border-radius: 15px;
+    box-shadow: inset 0px 2px 60px 5px rgb(236, 193, 255);
+}
+
+.expense-link {
+    border-left: 10px solid rgb(218, 140, 251);
+    background-color: rgb(246, 239, 250); 
+}
+
+.input-section input, .expenses-section input {
+    margin-right: 0.5rem;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    margin-top: 50px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    /* background-color: rgb(218, 140, 251); */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(188, 112, 231);
+}
+
+.expense-item, .income-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
+}
+
+.edit-btn, .delete-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.edit{
+    background-color: rgb(0, 0, 0);
+}
+
+.delete-btn {
+    background-color: rgb(255, 118, 118);
+    color: white;
+}
+
+.charts {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.chart-container {
+    text-align: center;
+    height: 200px;
+}
+
+canvas {
+    width: 300px;
+    height: 300px;
+}
+
+.balance, .income-div, .expenses-div {
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.income-div h2, .expenses-div h2 {
+    margin: 0;
+}
+
+.income-div {
+    margin-top: 20px;
+    box-shadow: inset 0px 2px 40px 5px rgb(181, 255, 181);
+}
+
+.expenses-div {
+    margin-top: 20px;
+    box-shadow: inset 0px 2px 40px 5px rgb(251, 133, 133);
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.expenses-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.chart-area {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 50vw;
+    box-shadow: inset 0px 2px 100px 50px rgb(242, 252, 255);
+}
+
+.input {
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+}
+
+/* Add this to expense.css */
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.income-list, .expenses-list {
+    width: 45%;
+}
+
+.income-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expenses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.details {
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: rgb(235, 159, 235);
+    background-image: url(edit-text.png);
+}
+
+.delete-btn {
+    background-color: rgb(255, 118, 118);
+    color: white;
+}
+
+.add-btn
+{
+    background-color: rgb(235, 171, 235);
+}
+
+.edit-btn:hover {
+    background-color: rgb(200, 160, 240);
+}
+
+.delete-btn:hover {
+    background-color: rgb(230, 70, 70);
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

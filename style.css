@@ -1,0 +1,231 @@
+html, body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow: hidden; /* To prevent the scrollbar */
+     font-size: 12px;
+     background-color: rgb(244, 221, 255);
+    }
+    
+.home-link
+{
+    border-left: 10px solid rgb(218, 140, 251);
+    background-color: rgb(246, 239, 250);    
+}
+
+.container {
+     display: flex;
+     width: 98%;
+     height: 100%;
+     gap: 2rem;
+     margin: 0;
+    }
+    
+.aside 
+    {
+         margin-left: 1rem ;
+         display: flex ;
+         flex-direction: column ;
+         gap: 1rem;
+         height: 100%;
+    }
+    
+.top {
+     display: flex;
+     align-items: center;
+     gap: 3rem;
+     justify-content: center;
+     border: 1px solid lightgrey;
+     border-radius: 10px;
+     margin: 5px;
+     background-color: white;
+    }
+    
+.sidebar {
+     background-color: rgb(255, 255, 255);
+     height: calc(100% - 5rem); /* Adjust the height calculation */
+     border: 1px solid lightgrey;
+     border-radius: 10px;
+     width: 210px;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+    }
+    
+aside .sidebar a {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     text-decoration: none;
+     color: grey;
+     margin-left: 1rem;
+     transition: all .1s ease-in;
+    }
+    
+aside .sidebar a:hover {
+     margin-left: 1rem;
+     color: darkorchid;
+     transition: 1s;
+    }
+    
+aside .sidebar a:hover span {
+     margin-left: 1rem;
+     color: darkorchid;
+     transition: 1s;
+    }
+    
+.main-box {
+     border: 1px solid lightgrey;
+     margin-top: 5px;
+     border-radius: 10px;
+     background-color: white;
+     flex-grow: 1;
+     height: 100%;
+     overflow-y: auto; /* To allow scrolling within main-box if content overflows */
+    }
+    
+hr {
+      height: 5px;
+      margin-top: 15px;
+      width: 90%;
+      background-color: rgb(244, 221, 255);
+      border-radius: 5px;
+    }
+    
+.input {
+      border: 1px solid lightgrey;
+      border-radius: 15px;
+      height: 2rem;
+      width: 20rem;
+    }
+    
+.search-bar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+     margin-top: 20px;
+    }
+    
+.search-btn {
+     border-radius: 10px;
+     border: 1px solid grey;
+     height: 2rem;
+     width: 7rem;
+     cursor: pointer;
+    }
+    
+.search-btn:hover {
+     background-color: rgb(230, 198, 244);
+     transition: 1s;
+    }
+    
+.box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+     margin: 10px;
+    }
+    
+.weather {
+     border: 2px solid lightgrey;
+     height: 200px;
+     width: 80%;
+     margin-top: 30px;
+     margin: 15px;
+     border-radius: 50px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+    }
+    
+.emoji {
+     height: 150px;
+     width: 150px;
+    }
+    
+.condition {
+     font-size: 20px;
+    }
+    
+.flex {
+     display: flex;
+     justify-content: center;
+    align-items: center;
+    }
+    
+.boxes {
+     border: 2px solid lightgrey;
+     height: 100px;
+     margin-top: 30px;
+     width: 35rem;
+     border-radius: 15px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+.first, .second, .third {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: large;
+    }
+    
+.first:hover, .second:hover, .third:hover {
+     margin-top: 20px;
+     transition: 0.5s ease-in;
+     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+.third
+{
+    display: flex;
+    flex-direction: column;
+}
+    
+.weather:hover {
+     transition: ease-in;
+     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+     border-radius: 60px;
+    }
+    
+.center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    
+.clock {
+     display: flex;
+     justify-content: center;
+     border: 1px solid lightgrey;
+     align-items: center;
+     height: 10rem;
+     margin: 100px;
+     border-radius: 50px;
+     width: 450px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+.clock:hover {
+    transition: 0.5s ease-in;
+     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+
+a:hover
+{
+    border-left: 10px solid rgb(218, 140, 251);
+    background-color: rgb(246, 239, 250);
+}
+
+aside .sidebar a.active {
+     border-left: 10px solid rgb(218, 140, 251);
+     background-color: rgb(246, 239, 250);
+    }
+    
+
+
+        
